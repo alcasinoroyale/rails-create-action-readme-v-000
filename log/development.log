@@ -43,3 +43,9 @@ Completed 200 OK in 27ms (Views: 10.4ms | ActiveRecord: 0.2ms)
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Title Goes Here"], ["description", "Desc goes here..."], ["created_at", "2018-09-08 23:28:48.194937"], ["updated_at", "2018-09-08 23:28:48.194937"]]
   [1m[36m (75.6ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/posts/new" for 108.5.57.68 at 2018-09-08 23:32:17 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (2.9ms)
